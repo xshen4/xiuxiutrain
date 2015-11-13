@@ -10,5 +10,5 @@ angular.module('myApp', [
   'myApp.version'
 ]).
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.otherwise({redirectTo: '/resume'});
+  $routeProvider.otherwise({redirectTo: '/about'});
 }]);

@@ -1,5 +1,17 @@
 .about {
+    font-size: 18px;
+    font-weight: 200;
     padding: 20px;
+    padding-top: 50px;
+
+    > div {
+     padding-top: 15px;
+    }
+
+}
+
+h1 {
+    font-weight: 200;
 }
 
 .red {
@@ -8,4 +20,19 @@
 
 .blue {
     color:  #55acee;
+}
+
+.favorite-things {
+    display: flex;
+    justify-content: center;
+}
+
+.thing {
+    clear: left;
+    text-align: center;
+    padding: 15px 50px;
+}
+
+.fa {
+    font-size: 50px;
 }
