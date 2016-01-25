@@ -11,4 +11,28 @@ angular.module('myApp.about', ['ngRoute'])
 
 .controller('About', function($scope) {
   $scope.image = 'about/images/xiu.png';
+
+  $scope.favorite_things = {
+    'front_end': {
+      'class' : 'fa fa-users',
+      'title' : 'UX/UI',
+      'content' : 'UX is kewl'
+    },
+    'api': {
+      'class': 'fa fa-key',
+      'title' : 'API'
+    },
+    'backend' : {
+      'class' : 'fa fa-heartbeat',
+      'title' : 'Backend'
+    },
+    'database' : {
+      'class' : 'fa fa-database',
+      'title' : 'Data'
+    },
+    'deploy' : {
+      'class' : 'fa fa-ship',
+      'title' : 'Deployment'
+    }
+  };
 });
