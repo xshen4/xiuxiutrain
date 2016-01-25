@@ -3,24 +3,31 @@
         <img ng-src="{{image}}" width="200" height="200"/>
         <h1>Hi, I'm Xiuli!</h1>
         <div>
-            <div>I'm a software engineer currently focused on becoming a better full stack developer and building responsive and scalable applications people love to use.</div>
-            <!--<p>
-                <span class="blue">So what does that mean to me?</span>
-                <span>
-                    I like to learn new things, develop and deploy on any part of the tech stack.
-                </span>
-            </p>-->
+            <div class="content">I'm a software engineer currently focused on becoming a better full stack developer and building responsive and scalable applications people love to use.</div>
+            <div class="content">Thanks for visiting this site! It's currently a work in progress, so check back for more information on my experience or you can navigate to my LinkedIn / Github for more information.  Feel free to contact me as well for any questions.  Thanks!</div>
+            <div class="favorite-things">
+                <div ng-repeat="site in links" class="thing">
+                    <a href="{{site.link}}"">
+                    <i class="{{site.class}}"></i>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
+
     <div>
         <h1>A few of my favorite things...</h1>
-    </div>
-    <div class="favorite-things">
-        <br/>
-        <div ng-repeat="thing in favorite_things" class="thing">
-            <p><i class="{{thing.class}}"></i></p>
-            <p>{{thing.title}}</p>
-            <p>{{thing.content}}</p>
+        <div>
+            <div class="favorite-things">
+                <div ng-repeat="thing in favorite_things" class="thing">
+                    <a ng-click="renderContent(thing.content)"><i class="{{thing.class}}"></i></a>
+                    <p>{{thing.title}}</p>
+                </div>
+            </div>
+            <div class="content">
+                <p>{{renderedContent}}</p>
+            </div>
         </div>
     </div>
+
 </div>
