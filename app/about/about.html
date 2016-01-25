@@ -17,25 +17,10 @@
     </div>
     <div class="favorite-things">
         <br/>
-        <div class="thing">
-            <p><i class="fa fa-users"></i></p>
-            <p>UX/UI</p>
-        </div>
-        <div class="thing">
-            <p><i class="fa fa-key"></i></p>
-            <p>API</p>
-        </div>
-        <div class="thing">
-            <p><i class="fa fa-heartbeat"></i></p>
-            <p>Backend</p>
-        </div>
-        <div class="thing">
-            <p><i class="fa fa-database"></i></p>
-            <p>Data</p>
-        </div>
-        <div class="thing">
-            <p><i class="fa fa-ship"></i></p>
-            <p>Deployment</p>
+        <div ng-repeat="thing in favorite_things" class="thing">
+            <p><i class="{{thing.class}}"></i></p>
+            <p>{{thing.title}}</p>
+            <p>{{thing.content}}</p>
         </div>
     </div>
 </div>
