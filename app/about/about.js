@@ -36,7 +36,7 @@ angular.module('myApp.about', ['ngRoute'])
     'deploy' : {
       'class' : 'fa fa-ship',
       'title' : 'Deployment',
-      'content' : 'Continuous deployment is one of the most important parts of software development.  Shipping a new version of a product or feature with little to no downtime, running automated tests/verification and having easily implemented rollback procedures are essential to having an consistently improving product that customers use without interruption.'
+      'content' : 'Continuous deployment is one of the most important parts of software development.  Shipping a new version of a product or feature with little to no downtime, running automated tests/verification and having easily implemented rollback procedures are essential to having a consistently improving product that customers use without interruption.'
     }
   };
 
